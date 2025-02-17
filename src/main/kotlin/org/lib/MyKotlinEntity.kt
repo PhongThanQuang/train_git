@@ -3,6 +3,7 @@ package org.lib
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
+import java.time.LocalDateTime
 
 /**
  * Example JPA entity.
@@ -28,4 +29,5 @@ class MyKotlinEntity {
     @get:Id
     var id: Long? = null
     var field: String? = null
+    var createAt: LocalDateTime? = null
 }
