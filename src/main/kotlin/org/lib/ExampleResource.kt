@@ -11,4 +11,9 @@ class ExampleResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     fun hello() = "Hello from Quarkus REST"
+
+    @GET
+    @Path("/{name}")
+    @Produces(MediaType.TEXT_PLAIN)
+    fun talk() = "Hello from Quarkus REST"
 }
